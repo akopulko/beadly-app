@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beadly is a native iOS and macOS app for designing Peyote stitch bracelet patterns, exporting printable PDFs, and managing bead maps across Apple devices.">
+    <title>Beadly - Peyote Stitch Bracelet Designer for iOS and macOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a class="logo" href="#hero">
+                <img src="icon.png" alt="Beadly app icon">
+                <span>Beadly</span>
+            </a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Available on iOS and macOS</p>
+                <h1>Design Peyote stitch patterns with a native Apple workflow.</h1>
+                <p class="hero-text">
+                    Beadly helps you sketch bracelet layouts, build color palettes, mark completed beads, and export printable pattern sheets. It is built for iPhone and Mac, so the same project can move from quick edits on iOS to larger planning sessions on macOS.
+                </p>
+                <div class="hero-actions">
+                    <a href="#screenshots" class="call-to-action">See the interface</a>
+                    <a href="#features" class="secondary-action">Explore features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <span class="stat-value">.beads</span>
+                        <span class="stat-label">document-based project files</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">PDF</span>
+                        <span class="stat-label">printable pattern export</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">7 languages</span>
+                        <span class="stat-label">including Japanese and Chinese</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-glow"></div>
+                <div class="device-wall">
+                    <div class="desktop-shot screenshot-frame mac-card">
+                        <img src="screenshots/beadly-macos-hero-main.png" alt="Beadly on macOS showing the main bracelet design workspace">
+                    </div>
+                    <div class="phone-stack">
+                        <div class="phone-back screenshot-frame phone-card">
+                            <img src="screenshots/beadly-iphone-hero-secondary.png" alt="Beadly on iPhone showing a secondary workflow view">
+                        </div>
+                        <div class="phone-front screenshot-frame phone-card">
+                            <img src="screenshots/beadly-iphone-hero-main.png" alt="Beadly on iPhone showing the main editing canvas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Why Beadly</p>
+                <h2>From first draft to printable pattern.</h2>
+                <p>
+                    The app is built around real bracelet design work: map editing, palette control, progress tracking, and document export, all wrapped in a native Apple interface.
+                </p>
+            </div>
+
+            <div class="feature-container">
+                <article class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Map editing</p>
+                        <h3>Draw patterns bead by bead with tools that stay fast.</h3>
+                        <p>
+                            Switch between Brush, Mark, and Erase tools, paint across multiple beads in a continuous stroke, and keep control with undo, resize, and row or column edits.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Create new maps with custom dimensions</li>
+                            <li>Insert or delete rows and columns without rebuilding the design</li>
+                            <li>Resize the canvas while preserving existing bead data</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img class="app-shot portrait-shot" src="screenshots/beadly-iphone-editing-canvas.png" alt="Beadly on iPhone editing a Peyote bracelet pattern">
+                    </div>
+                </article>
+
+                <article class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Color workflow</p>
+                        <h3>Build palettes automatically and keep every shade organized.</h3>
+                        <p>
+                            Beadly can generate a palette from the beads you paint, assign palette codes, and let you quickly reselect colors from a floating toolbar while you work.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Automatic palette generation from painted beads</li>
+                            <li>Replace one color across the entire map</li>
+                            <li>Optional bead shading for gradient or flat display</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img class="app-shot portrait-shot" src="screenshots/beadly-iphone-palette-workflow.png" alt="Beadly on iPhone showing palette and color workflow controls">
+                    </div>
+                </article>
+
+                <article class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Progress and export</p>
+                        <h3>Track completed beads and export patterns that are ready to print.</h3>
+                        <p>
+                            Mark finished beads as you assemble, open a summary sheet with totals and per-color counts, then export a printable PDF pattern sheet with a legend for reference away from the screen.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Visible completion overlays for in-progress work</li>
+                            <li>Map info with totals, completion counts, and per-color breakdowns</li>
+                            <li>Native share and print flows on iOS and macOS</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image feature-image-grid">
+                        <img class="app-shot compact-shot" src="screenshots/beadly-iphone-progress-tracking.png" alt="Beadly on iPhone showing completed bead tracking and progress information">
+                        <img class="app-shot compact-shot" src="screenshots/beadly-export-pdf-sheet.png" alt="Beadly export preview for a printable PDF pattern sheet">
+                    </div>
+                </article>
+
+                <article id="platforms" class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Apple platforms</p>
+                        <h3>Use iOS for quick edits and macOS for a wider design workspace.</h3>
+                        <p>
+                            Beadly is designed for Apple hardware from the start. iPhone keeps pattern work portable, while macOS gives you more room for large maps, palette management, and print preparation.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Native document workflow across Apple devices</li>
+                            <li>Zoom, pan, mini-map, and bead labels for larger projects</li>
+                            <li>Consistent editing model across iOS and macOS</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image mac-feature">
+                        <img class="app-shot landscape-shot" src="screenshots/beadly-macos-workspace-detail.png" alt="Beadly on macOS with a detailed bracelet design workspace visible">
+                    </div>
+                </article>
+
+                <article id="languages" class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Localization</p>
+                        <h3>Ready for an international audience.</h3>
+                        <p>
+                            The app is localized in Russian, German, French, Spanish, Japanese, and Chinese, alongside English. That support belongs on the landing page because it is a real part of the product, not an afterthought.
+                        </p>
+                        <ul class="feature-list">
+                            <li>English</li>
+                            <li>Russian, German, French, and Spanish</li>
+                            <li>Japanese and Chinese</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <div class="language-panel">
+                            <span><strong>🇺🇸</strong> English</span>
+                            <span><strong>🇷🇺</strong> Russian</span>
+                            <span><strong>🇩🇪</strong> German</span>
+                            <span><strong>🇫🇷</strong> French</span>
+                            <span><strong>🇪🇸</strong> Spanish</span>
+                            <span><strong>🇯🇵</strong> Japanese</span>
+                            <span><strong>🇨🇳</strong> Chinese</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works reveal">
+            <div class="section-heading">
+                <p class="eyebrow">How It Works</p>
+                <h2>A straightforward workflow for bracelet design.</h2>
+                <p>
+                    Beadly is built around a document workflow, so the app stays simple even when your pattern gets large.
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Start a new bracelet map</h3>
+                    <p>
+                        Create a new <code>.beads</code> document, choose your map dimensions, and begin with an empty canvas sized for the bracelet you want to design.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Paint the pattern bead by bead</h3>
+                    <p>
+                        Use Brush, Mark, and Erase to build the pattern, then zoom, pan, and adjust rows or columns as the layout evolves.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Organize colors and palette codes</h3>
+                    <p>
+                        Let Beadly generate a palette from the design, assign codes to each color, and replace a shade globally when you need to refine the pattern.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">04</span>
+                    <h3>Track progress while you bead</h3>
+                    <p>
+                        Mark completed beads as you work so the map becomes both a design tool and a live production reference.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">05</span>
+                    <h3>Review counts before you start</h3>
+                    <p>
+                        Open the map info sheet to check totals, completion counts, and per-color quantities before exporting or printing.
+                    </p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">06</span>
+                    <h3>Export a printable pattern</h3>
+                    <p>
+                        Generate a PDF pattern sheet with a color legend, then print it or share it through the native iOS and macOS system workflows.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="screenshots" class="screenshots reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Screenshots</p>
+                <h2>Beadly across iPhone and macOS.</h2>
+                <p>
+                    The interface stays consistent across platforms: quick edits on iPhone, a larger planning workspace on Mac, and printable output when the design is ready.
+                </p>
+            </div>
+
+            <div class="screenshot-grid">
+                <img class="app-shot portrait-shot" src="screenshots/beadly-iphone-hero-main.png" alt="Beadly iPhone screenshot showing the main canvas">
+                <img class="app-shot portrait-shot" src="screenshots/beadly-iphone-hero-secondary.png" alt="Beadly iPhone screenshot showing a secondary workflow">
+                <img class="app-shot landscape-shot" src="screenshots/beadly-macos-workspace-detail.png" alt="Beadly macOS screenshot showing a detailed desktop workspace">
+            </div>
+        </section>
+
+        <section class="download reveal">
+            <div class="download-panel">
+                <p class="eyebrow">Product model</p>
+                <h2>Start with the trial, unlock unlimited colors when you need them.</h2>
+                <p>
+                    Trial mode supports up to three colors, and a one-time purchase unlock removes that limit. The landing page is ready now; App Store links can be dropped in as soon as release details are final.
+                </p>
+                <div class="download-buttons">
+                    <a href="#hero" class="call-to-action">App Store link placeholder</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Beadly. Native Peyote bracelet design for iOS and macOS. <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
