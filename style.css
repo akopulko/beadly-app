@@ -576,6 +576,135 @@ footer p,
     padding-top: 24px;
 }
 
+.help-callout {
+    margin-top: 32px;
+    padding: 32px;
+    border-radius: 30px;
+    border: 1px solid var(--line-strong);
+    background:
+        radial-gradient(circle at top center, rgba(255, 184, 79, 0.1), transparent 36%),
+        linear-gradient(180deg, rgba(27, 18, 33, 0.96), rgba(11, 8, 15, 0.98));
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.help-callout h3 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.help-callout p:not(.eyebrow) {
+    max-width: 60ch;
+    margin: 18px auto 0;
+    color: var(--muted);
+}
+
+.help-page .hero h1,
+.help-page .help-hero h1 {
+    font-size: clamp(3rem, 8vw, 5.2rem);
+    max-width: 12ch;
+}
+
+.help-hero {
+    padding-bottom: 28px;
+}
+
+.help-layout {
+    display: grid;
+    grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.help-nav,
+.help-block {
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(180deg, rgba(24, 16, 29, 0.94), rgba(13, 9, 17, 0.96)),
+        linear-gradient(135deg, rgba(255, 184, 79, 0.05), transparent 45%);
+    box-shadow: var(--shadow);
+}
+
+.help-nav {
+    position: sticky;
+    top: 104px;
+    padding: 24px;
+    border-radius: 28px;
+}
+
+.help-nav h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+.help-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.help-nav li + li {
+    margin-top: 10px;
+}
+
+.help-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.help-nav a:hover,
+.help-nav a:focus-visible {
+    color: var(--brand);
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.help-block {
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.help-block h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+}
+
+.help-block h3 {
+    margin: 28px 0 0;
+    font-size: 1.35rem;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.help-block p {
+    margin: 14px 0 0;
+    color: var(--muted);
+}
+
+.help-list {
+    margin: 16px 0 0;
+    padding-left: 22px;
+    color: var(--muted);
+}
+
+.help-list li + li {
+    margin-top: 10px;
+}
+
+.help-block code {
+    color: var(--text);
+    font-family: "SF Mono", "Menlo", monospace;
+}
+
 .steps-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -668,9 +797,18 @@ footer p {
 }
 
 @media (max-width: 1080px) {
+    .help-layout,
     .steps-grid,
     .screenshot-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .help-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .help-nav {
+        position: static;
     }
 }
 
@@ -783,6 +921,16 @@ footer p {
     .feature-item {
         padding: 24px;
         border-radius: 26px;
+    }
+
+    .help-callout,
+    .help-block {
+        padding: 24px;
+        border-radius: 26px;
+    }
+
+    .help-nav {
+        padding: 20px;
     }
 
     .steps-grid,
