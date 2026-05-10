@@ -363,6 +363,26 @@ footer p,
     object-fit: cover;
 }
 
+.media-frame {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(247, 238, 229, 0.94)),
+        linear-gradient(135deg, rgba(214, 123, 45, 0.08), rgba(45, 143, 133, 0.08));
+    box-shadow: var(--shadow);
+}
+
+.media-frame-desktop {
+    border-radius: 28px;
+}
+
+.media-frame .app-shot {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
 .shot-phone {
     border-radius: 40px;
 }
@@ -374,7 +394,7 @@ footer p,
 .shot-tablet,
 .shot-ipad-landscape,
 .shot-ipad-vertical {
-    border-radius: 28px;
+    border-radius: 14px;
 }
 
 .shot-guided {
