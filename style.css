@@ -367,11 +367,13 @@ footer p,
     border-radius: 40px;
 }
 
-.shot-tablet {
-    border-radius: 30px;
+.shot-desktop {
+    border-radius: 28px;
 }
 
-.shot-desktop {
+.shot-tablet,
+.shot-ipad-landscape,
+.shot-ipad-vertical {
     border-radius: 28px;
 }
 
@@ -632,6 +634,26 @@ footer p,
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.screenshot-grid-ipad {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: stretch;
+}
+
+.ipad-stack {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.shot-ipad-vertical,
+.shot-ipad-landscape {
+    height: 100%;
+}
+
+.shot-ipad-vertical {
+    min-height: 100%;
+}
+
 .download {
     padding-top: 40px;
 }
@@ -753,13 +775,16 @@ footer p {
     .pattern-grid,
     .steps-grid,
     .screenshot-grid-iphone,
-    .screenshot-grid-ipad,
     .screenshot-grid-mac {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .guided-section,
     .help-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-grid-ipad {
         grid-template-columns: 1fr;
     }
 
@@ -891,6 +916,11 @@ footer p {
     .screenshot-grid-iphone,
     .screenshot-grid-ipad,
     .screenshot-grid-mac {
+        grid-template-columns: 1fr;
+    }
+
+    .ipad-stack {
+        grid-template-rows: none;
         grid-template-columns: 1fr;
     }
 
